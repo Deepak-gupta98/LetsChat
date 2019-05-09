@@ -22,8 +22,8 @@ router.post("/post/:id/likes",middleware.isLoggedIn, (req, res) => {
                 com.save();
                 Post.like.push(com);
                 Post.save();
-                res.redirect('/post');
-          }
+                res.redirect('back');
+            }
         });
       }
   });

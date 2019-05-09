@@ -28,21 +28,17 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/post">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
+                <ul class="navbar-nav mr-auto"><li class="nav-item active"></li></ul>
                 <% if(!currentuser){ %>
                 <a class="btn btn-dark" href="/login"><i class="sign in icon"></i> Login</a>
                 <a class="btn btn-dark" href="/signup"><i class="add user icon"></i> SignUp</a>
                 <% } else { %>
                 <a class="btn btn-dark" href="/chat"><i class="rocketchat icon"></i>Chat Room</a>
                 <a class="btn btn-dark" href = "/createpost"><i class="edit icon"></i>Create Post</a>
-                <a class="btn btn-dark" href="../user/<%=currentuser._id%>">Hi <%= currentuser.name %>!</a>
+                <a class="btn btn-dark" href="../../user/<%=currentuser._id%>">Hi <%= currentuser.name %>!</a>
                 <a class="btn btn-dark" href="/logout"><i class="sign out icon"></i> Logout</a>
                 <% } %>               
-            </div>
+            </div>s
         </nav>
         <!--Navbar End -->
         <div class="container">
